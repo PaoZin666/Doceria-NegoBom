@@ -1,0 +1,42 @@
+@media (max-width: 1200px) {
+    body {
+       background-color: #611a00;
+    }
+
+    .fundo {
+        display: none;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+    }
+
+    .container .doce {
+        max-width: 50%;
+    }
+
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .descricao {
+        color: #ffffff;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    
+}
