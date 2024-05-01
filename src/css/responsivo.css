@@ -1,7 +1,25 @@
 @media (max-width: 1200px) {
     body {
-       background-color: #611a00;
+      background-image: linear-gradient(225deg, #210900,#962800);
     }
+    body::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #210900,#962800);;
+        opacity: 0;
+        animation: bg 2800ms ease-in-out 0s infinite alternate-reverse;
+        z-index: -1;
+      }
+      @keyframes bg {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
 
     .fundo {
         display: none;
