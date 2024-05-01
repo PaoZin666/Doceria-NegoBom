@@ -124,3 +124,18 @@ button {
 button:hover {
     background-color: #611a00;
 }
+
+@media (max-width: 1200px) {
+    .painel {
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px #000000ad;
+        width: 270px;
+        height: 290px;
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+    main{
+        height: 66vh
+    }
+    
+}

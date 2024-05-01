@@ -20,6 +20,36 @@
           opacity: 1;
         }
       }
+      h1 {
+        font-size: 18px;
+        color:#ffffff;
+      }
+
+      .cabecalho {
+        background: #858585b0;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 40px;
+        margin: 0 auto;
+        width: 100vw;
+    }
+    .cabecalho .menu{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        gap: 3px;
+    }
+    .cabecalho nav li a{
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 16px;
+        padding: 5px 10px;
+        border-radius: 50px;
+        transition: 0.5s;
+    }
+    .cabecalho nav li a:hover{
+        background-color: #111111;
+    }
 
     .fundo {
         display: none;
@@ -58,3 +88,4 @@
 
     
 }
+
