@@ -126,9 +126,15 @@ footer p{
 }
 
 .carrossel-button {
-    background: rgba(0, 0, 0, 0.5); 
-    color: white; 
+    background: rgb(255 255 255 / 0%);
+    color: white;
     border: none;
-    padding: 10px; 
-    cursor: pointer; 
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+    opacity: 0;
+}
+
+.carrossel-button:hover {
+    opacity: 1;
 }

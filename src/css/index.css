@@ -46,7 +46,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 132px);
+    height: calc(100vh - 113px);
     padding: 0 30px 30px;
 }
 .container .doce{
@@ -105,3 +105,33 @@ footer p{
     color: #ffffff;
 }
 
+@media (max-width: 1200px) {
+    .container {
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    explore{
+        font-size: 16px;
+    }
+    .container .doce {
+        max-width: 85%;
+        z-index: 0;
+    }
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: transparent;
+    }
+    .container .descricao {
+        color: #ffffff;
+        text-align: center;
+    }
+
+}
