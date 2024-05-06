@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/lista-produtos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
     <title>Doceria NegoBom - Produtos Disponíveis</title>
 </head>
 <body>
@@ -17,14 +18,16 @@
     </div>
     <header class="cabecalho">
         <div class="logotipo">
-            <a>
-                <h1>Doceria NegoBom</h1>
-            </a>
+			<a>
+				<img src="./src/fotos/f83aeba5-1abb-40bb-b081-d43e061556b1.png" class="logo">
+			</a>
+            <a id="list"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg></a>
         </div>
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="lista-produtos.html">Produtos</a></li>
             </ul>
@@ -33,7 +36,7 @@
     
     <main>
         <section>
-            <h2 style="display:  flex;justify-content: center;font-size: 78px;">Nossos Produtos</h2>
+            <h2>Nossos Produtos</h2>
             <ul class="produtos">
                 <li class="produto">
                     <div class="carrossel-container">
@@ -56,8 +59,10 @@
                             </button>
                         </div>
                     </div>
-                    <p>Trufas de chocolate recheadas - 30 Uni...</p>
-                    <p>Preço: R$ 62,00</p>
+                    <div class="txt">
+                        <p>Trufas de chocolate recheadas - 30 Uni...</p>
+                        <a><p>Preço: R$ 62,00</p></a>
+                    </div>
                 </li> 
                 <li class="produto">
                     <div class="carrossel-container">
@@ -78,8 +83,10 @@
                             </button>
                         </div>
                     </div>
-                    <p>Bolos trufados de chocolate, oreo, chocolate branc...</p>
-                    <p>Preço: R$ 115,00</p>
+                    <div class="txt">
+                        <p>Bolos trufados de chocolate, oreo, chocolate branc...</p>
+                        <a><p>Preço: R$ 115,00</p></a>
+                    </div>
                 </li> 
                 <li class="produto">
                     <div class="carrossel-container">
@@ -100,8 +107,10 @@
                             </button>
                         </div>
                     </div>
-                    <p>Croissants de chocolate - 6 Unidades</p>
-                    <p>Preço: R$ 45,00</p>
+                    <div class="txt">
+                        <p>Croissants de chocolate - 6 Unidades</p>
+                        <a><p>Preço: R$ 45,00</p></a>
+                    </div>
                 </li> 
             </ul>
         </section>
@@ -111,33 +120,6 @@
         <p>Telefone: (XX) XXXX-XXXX | Email: contato@negobomdoceria.com</p>
     </footer>
 
-    <script>
-        function controlNext(button) {
-            const carrossel = button.parentNode.previousElementSibling;
-            const totalSlides = carrossel.children.length;
-            let currentSlide = parseInt(carrossel.getAttribute('data-current-slide') || 0);
-            
-            currentSlide = (currentSlide + 1) % totalSlides; 
-            const slideWidth = carrossel.clientWidth;
-            const offset = -currentSlide * slideWidth;
-            
-            carrossel.style.transform = `translateX(${offset}px)`;
-            carrossel.setAttribute('data-current-slide', currentSlide);
-        }
-
-        function controlBack(button) {
-            const carrossel = button.parentNode.previousElementSibling;
-            const totalSlides = carrossel.children.length;
-            let currentSlide = parseInt(carrossel.getAttribute('data-current-slide') || 0);
-            
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            const slideWidth = carrossel.clientWidth;
-            const offset = -currentSlide * slideWidth;
-
-            carrossel.style.transform = `translateX(${offset}px)`;
-            carrossel.setAttribute('data-current-slide', currentSlide);
-        }
-    </script>
-
+    <script src="./src/js/index.js"></script>
 </body>
 </html>

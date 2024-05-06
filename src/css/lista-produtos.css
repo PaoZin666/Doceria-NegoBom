@@ -1,13 +1,22 @@
 body {
-    font-family: 'Poppins';
+    overflow: hidden;
 }
 h2, explore {
     color:#ffffff;
     padding: 40px 20px;
 }
-h1 {
-    font-size: 45px;
-    color:#ffffff;
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 78px;
+}
+.logo {
+    width: 240px;
+    padding: 0 0 0 60px;
+}
+main{
+    height: 100vh;
+    overflow: hidden;
 }
 
 .cabecalho {
@@ -34,6 +43,10 @@ h1 {
 }
 .cabecalho nav li a:hover{
     background-color: #111111;
+}
+.logotipo svg{
+    opacity: 0;
+    display: none;
 }
 
 .fundo {
@@ -110,12 +123,10 @@ footer p{
     display: flex; 
     transition: transform 0.7s ease; 
 }
-
 .carrossel img {
     width: 100%;
     height: auto; 
 }
-
 .carrossel-buttons {
     position: absolute;
     top: 50%; 
@@ -124,7 +135,6 @@ footer p{
     display: flex;
     justify-content: space-between; 
 }
-
 .carrossel-button {
     background: rgb(255 255 255 / 0%);
     color: white;
@@ -134,7 +144,74 @@ footer p{
     transition: 1s;
     opacity: 0;
 }
-
 .carrossel-button:hover {
     opacity: 1;
+}
+
+
+.txt {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    top: 10px;
+    width: 235px;
+}
+.txt a{
+    border-radius: 30px;
+    transition: background-color 1s;
+    background-color: #300e00f8;
+    padding: 3px;
+}
+.txt a:hover {
+    background-color: #611a00;
+}
+@media (max-width: 1200px) {
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 36px;
+    }
+    .produtos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 0px 10px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .produto {
+        background: #1e0b03;
+        display: flex;
+        padding: 20px 5px;
+        max-width: 520px;
+        width: 100%;
+        border-radius: 35px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .carrossel-container {
+        position: relative;
+        width: 175px;
+        max-height: 200px;
+        overflow: hidden;
+        border-radius: 35px;
+        left: 10px;
+    }
+    .txt {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        gap: 10px;
+        top: 10px;
+    }
+    .txt a{
+        background-color: #100500;
+    }
 }

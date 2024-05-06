@@ -1,13 +1,13 @@
 body {
-    font-family: 'Poppins';
+    overflow: hidden;
 }
-h2, explore {
+explore {
     color:#000000;
-    padding: 40px 12px;
+    padding: 40px 20px;
 }
-h1 {
-    font-size: 45px;
-    color:#ffffff;
+.logo {
+    width: 240px;
+    padding: 0 0 0 60px;
 }
 
 .cabecalho {
@@ -18,15 +18,12 @@ h1 {
     margin: 0 auto;
     width: 100vw;
 }
-
-
 .cabecalho .menu{
     display: flex;
     align-items: center;
     height: 100%;
     gap: 3px;
 }
-
 .cabecalho nav li a{
     font-weight: bold;
     color: #ffffff;
@@ -35,9 +32,12 @@ h1 {
     border-radius: 50px;
     transition: 0.5s;
 }
-
 .cabecalho nav li a:hover{
     background-color: #111111;
+}
+.logotipo svg{
+    opacity: 0;
+    display: none;
 }
 
 .container {
@@ -46,24 +46,24 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 113px);
+    height:calc(100vh - 113px);
     padding: 0 30px 30px;
+    flex-direction: column-reverse;
 }
 .container .doce{
-    position: absolute;
+    position: relative;
     z-index: -1;
     width: 932px;
     border-radius: 40px;
 }
-h2 {padding: 0px 0px 155px;}
 .container .informacoes {
     display: flex;
-    background: linear-gradient(90deg, rgb(0 0 0 / 50%) 0%, rgba(255, 255, 255, 0) 50%, rgb(0 0 0 / 50%) 100%);
+    background: white;
     width: 932px;
-    height: 524px;
+    height: 268px;
     font-size: 22px;
-    margin: 30px 0;
-    border-radius: 40px;
+    margin: -56px 0;
+    border-radius: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -78,12 +78,10 @@ h2 {padding: 0px 0px 155px;}
     display: flex;
     justify-content: center;
 }
-
 .fundo .imagem {
     width: 100vw;
     height: 100vh;
 }
-
 .fundo::after {
     content: "";
     height: 100vh;
@@ -107,31 +105,31 @@ footer p{
 
 @media (max-width: 1200px) {
     .container {
+        height: 80vh;
         flex-wrap: nowrap;
         justify-content: center;
         flex-direction: column-reverse;
         align-items: center;
         gap: 30px;
     }
-    h2{
-        font-size: 20px;
-    }
     explore{
         font-size: 16px;
     }
     .container .doce {
-        max-width: 85%;
-        z-index: 0;
+        max-width: 115%;
+        display: block;
+        position: relative;
     }
     .container .informacoes {
         display: flex;
         align-items: center;
         flex-direction: column;
-        background: transparent;
+        background: #ffffff;
+        width: 100vw;
     }
     .container .descricao {
         color: #ffffff;
         text-align: center;
     }
-
+    
 }

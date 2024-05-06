@@ -1,3 +1,6 @@
+body{
+  font-family: 'Poppins';
+}
 @media (max-width: 1200px) {
   @viewport {
     orientation: portrait;
@@ -37,6 +40,12 @@
     height: 100%;
     gap: 3px;
   }
+  .cabecalho nav {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+  }
   .cabecalho nav li a {
     font-weight: bold;
     color: #ffffff;
@@ -56,6 +65,10 @@
     background: rgb(255 255 255 / 0%);
     color: white;
   }
+  .logo {
+    width: 170px;
+    padding: 0px;
+  }
 
   .fundo {
     display: none;
@@ -70,7 +83,6 @@
   .cabecalho {
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
   }
 
   .cabecalho nav{
@@ -79,7 +91,7 @@
   
   .logotipo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     background: rgb(255 255 255 / 0%);

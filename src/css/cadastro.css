@@ -1,11 +1,10 @@
 body {
-    font-family: 'Poppins';
     overflow: hidden;
     height: 100vh;
 }
-h1 {
-    font-size: 45px;
-    color:#ffffff;
+.logo {
+    width: 240px;
+    padding: 0 0 0 60px;
 }
 
 .cabecalho {
@@ -33,7 +32,6 @@ h1 {
 .cabecalho nav li a:hover{
     background-color: #111111;
 }
-
 .logotipo svg{
     opacity: 0;
     display: none;
@@ -64,6 +62,13 @@ h1 {
     background: linear-gradient(90deg, rgba(0,0,0,0.8) 5%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 95%);
 }
 
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
 footer {
     background-color: #161616c9;
     position: absolute;
@@ -78,22 +83,22 @@ footer p{
 .painel {
     border-radius: 10px;
     box-shadow: 0px 5px 10px #000000ad;
-    width: 400px;
-    height: 380px;
+    width: 600px;
+    height: 580px;
     background-color: #ffffff;
     overflow: hidden; 
 }
 .painel-barra {
     background-color: #210900; 
-    height: 20px; 
+    height: 28px; 
 }
 .painel-char {
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    height: 95%;
-    justify-content: space-evenly;
+    height: 98%;
+    justify-content: space-around;
 }
 
 .input {
@@ -102,12 +107,17 @@ footer p{
 }
 .input label {
     font-weight: bold;
+    font-size: 22px;
 }
 .input input {
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     border-radius: 5px;
-    padding: 8px;
-    transition: border 0.3s;
+    padding: 10px;
+    transition: border 0.5s;
+    font-size: 12px;
+}
+.input input::selection{
+    background: #a32c00;
 }
 .input input:focus {
     border: 1px solid #210900;
@@ -116,10 +126,12 @@ footer p{
 button {
     background-color: #210900;
     color: #ffffff;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px;
     transition: background-color 0.7s;
+
 }
 
 button:hover {
@@ -135,8 +147,13 @@ button:hover {
 
 @media (max-width: 760px) {
     .painel {
-        width: 330px;
-        height: 330px;
+        width: 90vw;
+        height: 420px;
+        font-weight: bold;
+    }
+    .painel-barra {
+        background-color: #210900;
+        height: 16px;
     }
     .input input {
         padding: 5px;
