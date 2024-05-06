@@ -116,16 +116,18 @@ footer p{
         font-size: 16px;
     }
     .container .doce {
-        max-width: 115%;
+        width: 400px;
         display: block;
         position: relative;
+        border-radius: 12px;
     }
     .container .informacoes {
         display: flex;
         align-items: center;
         flex-direction: column;
         background: #ffffff;
-        width: 100vw;
+        width: 400px;
+        border-radius: 10px;
     }
     .container .descricao {
         color: #ffffff;
