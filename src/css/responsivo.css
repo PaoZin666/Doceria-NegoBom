@@ -136,6 +136,7 @@ footer {
   }
   .cabecalho nav{
     display: none;
+    bottom: 5px;
   }
 
   .logotipo {
