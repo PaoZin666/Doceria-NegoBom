@@ -69,17 +69,6 @@ main{
     height: 80vh;
 }
 
-footer {
-    background-color: #161616c9;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 10px;
-}
-footer p{
-    color: #ffffff;
-}
-
 .painel {
     border-radius: 10px;
     box-shadow: 0px 5px 10px #000000ad;
@@ -141,15 +130,7 @@ button:hover {
 @media (max-width: 1200px) {
     .painel {
         width: 372px;
-        height: 370px;
-    }
-}
-
-@media (max-width: 760px) {
-    .painel {
-        width: 90vw;
         height: 420px;
-        font-weight: bold;
     }
     .painel-barra {
         background-color: #210900;
@@ -160,5 +141,11 @@ button:hover {
     }
     h2 {
         font-size: 36px;
+    }
+}
+
+@media (max-width: 760px) {
+    .painel {
+        font-weight: bold;
     }
 }

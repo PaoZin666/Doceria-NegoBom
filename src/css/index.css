@@ -14,7 +14,7 @@ explore {
     background: #858585b0;
     display: flex;
     justify-content: space-between;
-    padding: 5px 40px;
+    padding: 0px 40px;
     margin: 0 auto;
     width: 100vw;
 }
@@ -46,7 +46,7 @@ explore {
     display: flex;
     align-items: center;
     justify-content: center;
-    height:calc(100vh - 113px);
+    height: 80vh;
     padding: 0 30px 30px;
     flex-direction: column-reverse;
 }
@@ -92,16 +92,7 @@ explore {
     background: linear-gradient(90deg, rgba(0,0,0,0.8) 5%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 95%);
 }
 
-footer {
-    background-color: #161616c9;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 10px;
-}
-footer p{
-    color: #ffffff;
-}
+
 
 @media (max-width: 1200px) {
     .container {
@@ -133,5 +124,4 @@ footer p{
         color: #ffffff;
         text-align: center;
     }
-    
 }
