@@ -47,7 +47,7 @@ explore {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding: 0 30px 210px;
+    padding: 0 0 210px;
     flex-direction: column-reverse;
 }
 .container .doce{
