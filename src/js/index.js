@@ -38,3 +38,31 @@ function controlBack(button) {
     carrossel.style.transform = `translateX(${offset}px)`;
     carrossel.setAttribute('data-current-slide', currentSlide);
 }
+
+/*----------------------------------*/
+
+document.querySelector('button').addEventListener('click', function() {
+    var username = document.getElementById('username');
+    var email = document.getElementById('email');
+    var password = document.getElementById('password');
+
+    document.getElementById('usernameError').textContent = '';
+    document.getElementById('emailError').textContent = '';
+    document.getElementById('passwordError').textContent = '';
+
+    if (!username.value) {
+        document.getElementById('usernameError').textContent = 'Por favor, preencha o nome de usuário.';
+    }
+
+    if (!email.value) {
+        document.getElementById('emailError').textContent = 'Por favor, preencha o email.';
+    }
+
+    if (!password.value) {
+        document.getElementById('passwordError').textContent = 'Por favor, preencha a senha.';
+    }
+
+    if (username.value && email.value && password.value) {
+        window.location.href = './index.html';
+    }
+});

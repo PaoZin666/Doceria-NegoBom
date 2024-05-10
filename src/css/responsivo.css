@@ -1,5 +1,6 @@
 body{
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
 footer {
   background-color: #161616c9;
@@ -63,7 +64,7 @@ footer {
   }
   body::before {
     content: '';
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background: linear-gradient(45deg, #210900, #962800);
@@ -129,7 +130,7 @@ footer {
   }
 }
 
-@media (max-width: 504px) {
+@media (max-width: 565px) {
   .cabecalho {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -137,7 +138,9 @@ footer {
   .cabecalho nav{
     display: none;
   }
-
+  .cabecalho .menu {
+    padding: 0 0 8px 0
+  }
   .logotipo {
     display: flex;
     justify-content: space-evenly;

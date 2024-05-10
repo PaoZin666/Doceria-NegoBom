@@ -1,13 +1,18 @@
 body {
     overflow: hidden;
 }
-explore {
+h2 {
     color:#000000;
-    padding: 40px 20px;
+    font-size: 19px;
+    font-weight: 400;
+    padding: 5px 36px 10px;
 }
-.logo {
+.logotipo img {
     width: 240px;
     padding: 0 0 0 60px;
+}
+.logo2 {
+    display: none;
 }
 
 .cabecalho {
@@ -54,7 +59,8 @@ explore {
     position: relative;
     z-index: -1;
     width: 700px;
-    border-radius: 40px;
+    background: #ffffff;
+    border-radius: 40px 40px 0 0;
 }
 .container .doce2{
     display: none;
@@ -63,10 +69,10 @@ explore {
     display: flex;
     background: white;
     width: 700px;
-    height: 268px;
+    height: 320px;
     font-size: 19px;
-    margin: -45px 0;
-    border-radius: 20px;
+    margin: -90px 0;
+    border-radius: 0 0 40px 40px;
     flex-direction: column;
 }
 
@@ -96,36 +102,51 @@ explore {
 
 
 @media (max-width: 1200px) {
+    h2{
+        font-size: 14px;
+        padding: 5px 22px 10px
+    }
+
+    .logotipo img{
+        padding: 10px 0 0 60px;
+    }
+    .logo{
+        display: none;
+    }
+    .logo2 {
+        display: block;
+    }
+
     .container {
+        position: relative;
+        top: 64px;
+        gap: 30px;
         height: 100vh;
         flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: flex-end;
         flex-direction: column-reverse;
         align-items: center;
-        gap: 30px;
     }
-    explore{
-        font-size: 16px;
-    }
-    
     .container .doce{
     display: none;
     }
     .container .doce2 {
-        width: 400px;
         display: block;
         position: relative;
-        border-radius: 12px;
+        width: 380px;
+        z-index: -1;
+        border-radius: 12px 12px 0 0;
+        background: #ffffff;
     }
     .container .informacoes {
-        display: flex;
         align-items: center;
         flex-direction: column;
+        justify-content: center;
+        width: 380px;
+        height: 336px;
+        margin: -40px 0;
+        border-radius: 0 0 12px 12px;
         background: #ffffff;
-        width: 400px;
-        border-radius: 10px;
-        
-    justify-content: center;
     }
     .container .descricao {
         color: #ffffff;

@@ -156,6 +156,7 @@ main{
     transition: background-color 1s;
     background-color: #300e00f8;
     padding: 3px;
+    font-weight: 400;
 }
 .txt a:hover {
     background-color: #611a00;
@@ -174,7 +175,7 @@ main{
         padding: 0px 10px;
         justify-content: center;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     .produto {
         background: #1e0b03;
