@@ -3,7 +3,7 @@ body{
 }
 footer {
   background-color: #161616c9;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   padding: 0px 10px;
@@ -136,7 +136,6 @@ footer {
   }
   .cabecalho nav{
     display: none;
-    bottom: 5px;
   }
 
   .logotipo {
