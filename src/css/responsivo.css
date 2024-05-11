@@ -1,7 +1,12 @@
 body{
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
+  overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
 footer {
   background-color: #161616c9;
   position: fixed;
@@ -14,6 +19,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 15px;
 }
 
 .footer-info p {
@@ -36,6 +42,9 @@ footer {
       padding: 0px;
   }
 
+  .footer-info p {
+    font-size: 14px;
+}
   .footer-container {
       flex-direction: column;
       text-align: center;
@@ -44,7 +53,6 @@ footer {
   .social-links {
       margin-bottom: 10px;
   }
-
   .social-links a {
       margin: 0 5px;
   }

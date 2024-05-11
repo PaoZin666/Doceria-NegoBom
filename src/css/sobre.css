@@ -11,9 +11,6 @@ h2 {
     width: 240px;
     padding: 0 0 0 60px;
 }
-.logo2 {
-    display: none;
-}
 
 .cabecalho {
     background: #858585b0;
@@ -62,16 +59,13 @@ h2 {
     background: #ffffff;
     border-radius: 40px 40px 0 0;
 }
-.container .doce2{
-    display: none;
-}
 .container .informacoes {
     display: flex;
     background: white;
     width: 700px;
     height: 320px;
     font-size: 19px;
-    margin: -90px 0;
+    margin: -44px 0;
     border-radius: 0 0 40px 40px;
     flex-direction: column;
 }
@@ -110,27 +104,18 @@ h2 {
     .logotipo img{
         padding: 10px 0 0 60px;
     }
-    .logo{
-        display: none;
-    }
-    .logo2 {
-        display: block;
-    }
 
     .container {
         position: relative;
-        top: 64px;
-        gap: 30px;
+        top: 5vh;
+        gap: 15px;
         height: 100vh;
         flex-wrap: nowrap;
         justify-content: flex-end;
         flex-direction: column-reverse;
         align-items: center;
     }
-    .container .doce{
-    display: none;
-    }
-    .container .doce2 {
+    .container .doce {
         display: block;
         position: relative;
         width: 380px;

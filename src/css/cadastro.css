@@ -65,7 +65,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 70vh;
 }
 
 .painel {
@@ -115,6 +115,7 @@ button {
     background-color: #210900;
     color: #ffffff;
     font-size: 16px;
+    font-weight: 600;
     border: none;
     border-radius: 5px;
     padding: 15px;
@@ -129,7 +130,7 @@ button:hover {
 @media (max-width: 1200px) {
     .painel {
         width: 372px;
-        height: 420px;
+        height: 500px;
     }
     .painel-barra {
         background-color: #210900;
