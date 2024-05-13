@@ -1,10 +1,11 @@
-body{
+body {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   overflow-x: hidden;
 }
+
 body::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
 
 footer {
@@ -39,26 +40,30 @@ footer {
 
 @media (max-width: 1200px) {
   footer {
-      padding: 0px;
+    position: relative;
+    padding: 0px;
   }
 
   .footer-info p {
     font-size: 14px;
-}
+  }
+
   .footer-container {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .social-links {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
+
   .social-links a {
-      margin: 0 5px;
+    margin: 0 5px;
   }
-  .social-links svg{
-      height: 20px;
-      width: 20px;
+
+  .social-links svg {
+    height: 20px;
+    width: 20px;
   }
 
 }
@@ -67,9 +72,11 @@ footer {
   @viewport {
     orientation: portrait;
   }
+
   body {
     background-image: linear-gradient(225deg, #210900, #962800);
   }
+
   body::before {
     content: '';
     position: fixed;
@@ -81,6 +88,7 @@ footer {
     animation: bg 2800ms ease-in-out 0s infinite alternate-reverse;
     z-index: -1;
   }
+
   @keyframes bg {
     0% {
       opacity: 0;
@@ -95,7 +103,7 @@ footer {
     font-size: 18px;
     color: #ffffff;
   }
-  
+
   .cabecalho .menu {
     display: flex;
     align-items: center;
@@ -103,12 +111,14 @@ footer {
     gap: 3px;
     justify-content: flex-end;
   }
+
   .cabecalho nav {
     align-items: center;
     justify-content: center;
     flex-direction: row;
     width: 100vw;
   }
+
   .cabecalho nav li a {
     font-weight: bold;
     color: #ffffff;
@@ -117,6 +127,7 @@ footer {
     border-radius: 50px;
     transition: 0.5s;
   }
+
   .cabecalho nav li a:hover {
     background-color: #111111;
   }
@@ -128,6 +139,7 @@ footer {
     background: rgb(255 255 255 / 0%);
     color: white;
   }
+
   .logo {
     width: 170px;
     padding: 0px;
@@ -136,6 +148,7 @@ footer {
   .fundo {
     display: none;
   }
+
 }
 
 @media (max-width: 565px) {
@@ -143,12 +156,15 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .cabecalho nav{
+
+  .cabecalho nav {
     display: none;
   }
+
   .cabecalho .menu {
     padding: 0 0 8px 0
   }
+
   .logotipo {
     display: flex;
     justify-content: space-evenly;
@@ -157,7 +173,8 @@ footer {
     background: rgb(255 255 255 / 0%);
     color: white;
   }
-  .logotipo svg{
+
+  .logotipo svg {
     opacity: 1;
     display: block;
   }

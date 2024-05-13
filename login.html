@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/cadastro.css">
+    <link rel="stylesheet" href="./src/css/login.css">
     <link rel="stylesheet" href="./src/css/responsivo.css">
-    <title>Doceria NegoBom - Cadastro</title>
+    <title>Doceria NegoBom - Login</title>
 </head>
 
 <body style="height: auto;">
@@ -44,25 +44,24 @@
             <div class="painel-barra">
             </div>
             <div class="painel-char">
-                <h2 style="align-self: center;font-size: 64px;">Cadastro</h2>
+                <h2 style="align-self: center;font-size: 64px;">Login</h2>
                 <form method="post" action="login.php" style="display: contents;">
-                    <div class="input">
+                    <div class="input" id="usernameInput">
                         <label for="username">Nome de Usuário:</label>
-                        <input type="text" id="username" name="username" placeholder="Digite seu nome">
-                        <span id="usernameError" style="color: red;font-size: small;font-weight: 500;"></span>
+                        <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário">
                     </div>
-                    <div class="input">
+                    <div class="input" id="emailInput" style="display: none;">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" placeholder="Digite seu email">
-                        <span id="emailError" style="color: red;font-size: small;font-weight: 500;"></span>
                     </div>
                     <div class="input">
                         <label for="password">Senha:</label>
                         <input type="password" id="password" name="password" placeholder="Digite sua senha">
-                        <span id="passwordError" style="color: red;font-size: small;font-weight: 500;"></span>
                     </div>
-                    <button type="submit">Cadastro</button>
-                    <p style="align-self: center;font-weight: 300;font-size: 14px;padding: 0 0 10px;">Ja tem uma conta?Faça <a href="./login.html" style="text-decoration: underline;color: dodgerblue;">Login</a></p>
+                    <div style="display: flex;gap: 8px; flex-direction: column;">
+                        <button type="button" onclick="toggleInput()">Trocar</button>
+                        <button type="submit">Login</button>
+                    </div>
                 </form>
             </div>
         </div>

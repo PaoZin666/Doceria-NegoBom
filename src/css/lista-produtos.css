@@ -1,6 +1,7 @@
-h2, explore {
+h2,
+explore {
     overflow: hidden;
-    color:#ffffff;
+    color: #ffffff;
     padding: 40px 20px;
 }
 h2 {
@@ -8,6 +9,12 @@ h2 {
     justify-content: center;
     font-size: 78px;
 }
+
+
+main {
+    padding: 0 0 10px;
+}
+
 .logo {
     width: 240px;
     padding: 0 0 0 60px;
@@ -21,13 +28,15 @@ h2 {
     margin: 0 auto;
     width: 100vw;
 }
-.cabecalho .menu{
+
+.cabecalho .menu {
     display: flex;
     align-items: center;
     height: 100%;
     gap: 3px;
 }
-.cabecalho nav li a{
+
+.cabecalho nav li a {
     font-weight: bold;
     color: #ffffff;
     font-size: 22px;
@@ -35,10 +44,12 @@ h2 {
     border-radius: 50px;
     transition: 0.5s;
 }
-.cabecalho nav li a:hover{
+
+.cabecalho nav li a:hover {
     background-color: #111111;
 }
-.logotipo svg{
+
+.logotipo svg {
     opacity: 0;
     display: none;
 }
@@ -65,7 +76,7 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,0.8) 5%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 95%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 5%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 95%);
 }
 
 .produtos {
@@ -103,21 +114,24 @@ h2 {
 }
 
 .carrossel {
-    display: flex; 
-    transition: transform 0.7s ease; 
+    display: flex;
+    transition: transform 0.7s ease;
 }
+
 .carrossel img {
     width: 100%;
-    height: auto; 
+    height: auto;
 }
+
 .carrossel-buttons {
     position: absolute;
-    top: 50%; 
-    transform: translateY(-50%); 
-    width: 100%; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
+
 .carrossel-button {
     background: rgb(255 255 255 / 0%);
     color: white;
@@ -127,6 +141,7 @@ h2 {
     transition: 1s;
     opacity: 0;
 }
+
 .carrossel-button:hover {
     opacity: 1;
 }
@@ -141,23 +156,26 @@ h2 {
     top: 10px;
     width: 235px;
 }
-.txt a{
+
+.txt a {
     border-radius: 30px;
     transition: background-color 1s;
     background-color: #300e00f8;
     padding: 3px;
     font-weight: 400;
 }
+
 .txt a:hover {
     background-color: #611a00;
 }
-@media (max-width: 1200px) {
 
+@media (max-width: 1200px) {
     h2 {
         display: flex;
         justify-content: center;
         font-size: 36px;
     }
+
     .produtos {
         display: flex;
         flex-wrap: wrap;
@@ -167,6 +185,7 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
+
     .produto {
         background: #1e0b03;
         display: flex;
@@ -178,6 +197,7 @@ h2 {
         flex-wrap: wrap;
         align-items: center;
     }
+
     .carrossel-container {
         position: relative;
         width: 175px;
@@ -186,12 +206,14 @@ h2 {
         border-radius: 35px;
         left: -5px;
     }
+
     .carrossel-button {
         background: rgb(85 85 85 / 70%);
         border-radius: 20px;
         color: black;
         opacity: 1;
     }
+
     .txt {
         position: relative;
         display: flex;
@@ -201,18 +223,22 @@ h2 {
         gap: 10px;
         top: 10px;
     }
-    .txt a{
+
+    .txt a {
         background-color: #100500;
     }
 }
+
 @media (max-width: 504px) {
-    .produtos{
-      align-items: center;
+    .produtos {
+        align-items: center;
     }
-    .produto{
-      width: 328px;
+
+    .produto {
+        width: 328px;
     }
+
     .carrossel-container {
         left: 0;
     }
-  }
+}

@@ -1,12 +1,16 @@
-body {
-    overflow: hidden;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
 }
 h2 {
-    color:#000000;
+    color: #000000;
     font-size: 19px;
     font-weight: 400;
     padding: 5px 36px 10px;
 }
+
 .logotipo img {
     width: 240px;
     padding: 0 0 0 60px;
@@ -20,13 +24,15 @@ h2 {
     margin: 0 auto;
     width: 100vw;
 }
-.cabecalho .menu{
+
+.cabecalho .menu {
     display: flex;
     align-items: center;
     height: 100%;
     gap: 3px;
 }
-.cabecalho nav li a{
+
+.cabecalho nav li a {
     font-weight: bold;
     color: #ffffff;
     font-size: 22px;
@@ -34,10 +40,12 @@ h2 {
     border-radius: 50px;
     transition: 0.5s;
 }
-.cabecalho nav li a:hover{
+
+.cabecalho nav li a:hover {
     background-color: #111111;
 }
-.logotipo svg{
+
+.logotipo svg {
     opacity: 0;
     display: none;
 }
@@ -48,17 +56,18 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    padding: 0 30px 210px;
+    padding: 0 30px 0;
     flex-direction: column-reverse;
 }
-.container .doce{
+
+.container .doce {
     position: relative;
     z-index: -1;
     width: 700px;
     background: #ffffff;
     border-radius: 40px 40px 0 0;
 }
+
 .container .informacoes {
     display: flex;
     background: white;
@@ -79,10 +88,12 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
 .fundo .imagem {
     width: 100vw;
     height: 100vh;
 }
+
 .fundo::after {
     content: "";
     height: 100vh;
@@ -90,31 +101,30 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,0.8) 5%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 95%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 5%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 95%);
 }
 
 
 
 @media (max-width: 1200px) {
-    h2{
+
+    h2 {
         font-size: 14px;
         padding: 5px 22px 10px
     }
 
-    .logotipo img{
+    .logotipo img {
         padding: 10px 0 0 60px;
     }
 
     .container {
-        position: relative;
-        top: 5vh;
         gap: 15px;
-        height: 100vh;
         flex-wrap: nowrap;
-        justify-content: flex-end;
+        justify-content: center;
         flex-direction: column-reverse;
         align-items: center;
     }
+
     .container .doce {
         display: block;
         position: relative;
@@ -123,6 +133,7 @@ h2 {
         border-radius: 12px 12px 0 0;
         background: #ffffff;
     }
+
     .container .informacoes {
         align-items: center;
         flex-direction: column;
@@ -133,6 +144,7 @@ h2 {
         border-radius: 0 0 12px 12px;
         background: #ffffff;
     }
+
     .container .descricao {
         color: #ffffff;
         text-align: center;
