@@ -4,15 +4,22 @@ explore {
     color: #ffffff;
     padding: 40px 20px;
 }
+
 h2 {
     display: flex;
     justify-content: center;
-    font-size: 78px;
+    font-size: 60px;
+    background: linear-gradient(45deg, #3b1304, #c33603);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    top: -30px;
 }
-
 
 main {
     padding: 0 0 10px;
+    height: 90vh;
 }
 
 .logo {
@@ -79,36 +86,10 @@ main {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 5%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 95%);
 }
 
-.produtos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 0px 10px;
-    justify-content: center;
-}
-
-.produto {
-    background: #391000bd;
-    display: flex;
-    padding: 20px 5px;
-    width: 248px;
-    border-radius: 50px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.produto p {
-    padding: 0px 25px;
-    font-size: 18px;
-    color: #ffffff;
-}
-
 .carrossel-container {
     position: relative;
-    width: 200px;
-    max-height: 268px;
+    width: 330px;
+    max-height: 495px;
     overflow: hidden;
     border-radius: 25px;
 }
@@ -139,93 +120,115 @@ main {
     padding: 10px;
     cursor: pointer;
     transition: 1s;
-    opacity: 0;
+    opacity: 0.2;
 }
 
 .carrossel-button:hover {
     opacity: 1;
 }
 
-
-.txt {
-    position: relative;
+.produto {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    top: 10px;
-    width: 235px;
+}
+.venda {
+    display: inline-flex;
+    background-color: white;
+    padding: 50px 30px;
+    border-radius: 35px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.descricao {
+    display: flex;
+    width: 550px;
+    height: 530px;
+    gap: 8px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
 }
 
-.txt a {
-    border-radius: 30px;
-    transition: background-color 1s;
-    background-color: #250b00d6;
-    padding: 3px;
+.descricao a {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     font-weight: 400;
+    color: #ffffff;
+    background-color: #300e00f8;
+    transition: background-color 1s;
+    border-radius: 30px;
+    padding: 3px;
 }
-
-.txt a:hover {
+.descricao a:hover {
     background-color: #611a00;
 }
 
+@keyframes spin {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.border {
+    background: linear-gradient(30deg, rgb(28 12 2) 25%, rgb(189 60 11) 100%);
+    background-size: 400% auto;
+    display: flex;
+    padding: 20px;
+    animation: spin 8s linear infinite alternate-reverse; 
+    border-radius: 50px;
+}
+
 @media (max-width: 1200px) {
-    h2 {
-        display: flex;
-        justify-content: center;
-        font-size: 36px;
-    }
-
-    .produtos {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-        padding: 0px 10px;
-        justify-content: center;
+    .venda {
         flex-direction: column;
-        align-items: center;
+        padding: 6px 0px;
+        gap: 0px;
+        width: 505px;
+        border-radius: 60px;
     }
-
-    .produto {
-        background: #1e0b03;
-        display: flex;
-        padding: 20px 5px;
-        max-width: 520px;
-        width: 100%;
-        border-radius: 35px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
+    .descricao{
+    height: 300px;
+    font-size: 12px;
+    padding: 0 24px 10px;
     }
-
+    .border{
+        padding: 15px;
+        border-radius: 50px;
+    }
     .carrossel-container {
-        position: relative;
-        width: 175px;
-        max-height: 200px;
-        overflow: hidden;
+        width: 200px;
         border-radius: 35px;
-        left: -5px;
     }
-
     .carrossel-button {
         background: rgb(85 85 85 / 70%);
         border-radius: 20px;
+        padding: 5px;
         color: black;
-        opacity: 1;
     }
-
-    .txt {
-        position: relative;
-        display: flex;
-        flex-direction: column;
+    svg{
+        width: 15px;
+        height: 15px;
+    }
+    h2 {
+        font-size: 50px;
+        top: 0px;
+        justify-content: center;
         align-items: center;
-        width: 300px;
-        gap: 10px;
-        top: 10px;
-    }
-
-    .txt a {
-        background-color: #100500;
     }
 }
 

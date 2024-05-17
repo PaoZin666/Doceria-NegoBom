@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./src/fotos/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../src/fotos/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/cadastro.css">
-    <link rel="stylesheet" href="./src/css/responsivo.css">
-    <title>Doceria NegoBom - Cadastro</title>
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="./produto.css">
+    <link rel="stylesheet" href="../src/css/responsivo.css">
+    <title>Doceria NegoBom - Produto</title>
 </head>
 
-<body style="height: auto;">
+<body>
+
     <div class="fundo">
-        <img class="imagem" src="./src/fotos/fundo.webp">
+        <img class="imagem" src="../src/fotos/fundo.webp">
     </div>
+
     <header class="cabecalho">
         <div class="logotipo">
             <a>
-                <img src="./src/fotos/f83aeba5-1abb-40bb-b081-d43e061556b1.png" class="logo">
+                <img src="../src/fotos/f83aeba5-1abb-40bb-b081-d43e061556b1.png" class="logo">
             </a>
             <a id="list"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-list" viewBox="0 0 16 16">
@@ -31,42 +34,56 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="lista-produtos.html">Produtos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../cadastro.html">Cadastro</a></li>
+                <li><a href="../lista-produtos.html">Produtos</a></li>
+                <li><a href="../sobre.html">Sobre</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="painel">
-            <div class="painel-barra"></div>
-            <div class="painel-char">
-                <h2 style="align-self: center;font-size: 64px;">Cadastro</h2>
-                <form action="/cadastrar" method="post" style="display: contents;">
-                    <div class="input">
-                        <label for="username">Nome de Usuário:</label>
-                        <input type="text" id="username" name="username" placeholder="Digite seu nome">
-                        <span id="usernameError" style="color: red;font-size: small;font-weight: 500;"></span>
-                    </div>
-                    <div class="input">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu email">
-                        <span id="emailError" style="color: red;font-size: small;font-weight: 500;"></span>
-                    </div>
-                    <div class="input">
-                        <label for="password">Senha:</label>
-                        <input type="password" id="password" name="password" placeholder="Digite sua senha">
-                        <span id="passwordError" style="color: red;font-size: small;font-weight: 500;"></span>
-                    </div>
-                </form>
-                <button type="submit">Cadastro</button>
-                <p style="align-self: center;font-weight: 300;font-size: 14px;padding: 0 0 10px;">Ja tem uma conta? Faça
-                    <a href="login.html" style="text-decoration: underline;color: dodgerblue;">Login</a>
-                </p>
+        <section class="produto">
+            <div class="venda">
+                <ul class="border">
+                    <li class="produto">
+                        <div class="carrossel-container">
+                            <div class="carrossel">
+                                <img src="../src/doces/cupcake6.jfif">
+                                <img src="../src/doces/cupcake1.jfif">
+                                <img src="../src/doces/cupcake2.jfif">
+                                <img src="../src/doces/cupcake3.jfif">
+                                <img src="../src/doces/cupcake4.jfif">
+                                <img src="../src/doces/cupcake5.jfif">
+                            </div>
+                            <div class="carrossel-buttons">
+                                <button class="carrossel-button" onclick="controlBack(this)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                                    </svg>
+                                </button>
+                                <button class="carrossel-button" onclick="controlNext(this)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="descricao">
+                    <h2>Cupcakes</h2>
+                    <p>Delicie-se com nossos cupcakes de chocolate com um toque frutado. Cada mordida é uma combinação perfeita de riqueza de chocolate e frescor das frutas. A suavidade e umidade do bolo de chocolate se harmonizam com a doçura natural das frutas, criando uma experiência de sabor irresistível.</p>
+                    <p style="font-size: 25px;"><strong>Preço:</strong> R$25,00 - 5 unidades</p>
+                    <a>Comprar</a>
+                    <a>Adicionar ao Carrinho<img width="30" height="30" src="https://img.icons8.com/material-rounded/30/shopping-cart.png" alt="shopping-cart"/></a>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
@@ -113,6 +130,6 @@
         </div>
     </footer>
 </body>
-<script src="./src/js/index.js"></script>
+<script src="../src/js/index.js"></script>
 
 </html>
