@@ -1,8 +1,6 @@
 h2,
 explore {
-    overflow: hidden;
     color: #ffffff;
-    padding: 40px 20px;
 }
 
 h2 {
@@ -202,9 +200,9 @@ main {
         border-radius: 60px;
     }
     .descricao{
-    height: 300px;
-    font-size: 12px;
-    padding: 0 24px 10px;
+        height: auto;
+        font-size: 12px;
+        padding: 0 24px 10px;
     }
     .border{
         padding: 15px;
@@ -233,15 +231,31 @@ main {
 }
 
 @media (max-width: 504px) {
+    h2 {
+        font-size: 36px;
+    }
+
+    .descricao {
+        height: auto;
+        width: 550px;
+        font-size: 14px;
+        padding: 0px 85px 10px;
+        gap: 4px;
+    }
+
+    .venda {
+        width: 385px;
+    }
+
+    .border {
+        padding: 12px;
+    }
+
     .produtos {
         align-items: center;
     }
 
-    .produto {
-        width: 328px;
-    }
-
     .carrossel-container {
-        left: 0;
+        width: 180px;
     }
 }

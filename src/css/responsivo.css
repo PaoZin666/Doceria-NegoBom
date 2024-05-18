@@ -10,7 +10,7 @@ body::-webkit-scrollbar {
 
 footer {
   background-color: #161616c9;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   padding: 0px 10px;

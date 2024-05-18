@@ -169,7 +169,15 @@ main {
     background-color: #611a00;
 }
 
+.group{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
 @media (max-width: 1200px) {
+    .group{
+        display: contents;
+    }
     h2 {
         display: flex;
         justify-content: center;
@@ -230,6 +238,9 @@ main {
 }
 
 @media (max-width: 504px) {
+    .group{
+        display: contents;
+    }
     .produtos {
         align-items: center;
     }
