@@ -82,9 +82,10 @@ main {
 .produtos {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 40px;
     padding: 0px 10px;
-    justify-content: center;
 }
 
 .produto {
@@ -93,14 +94,14 @@ main {
     padding: 20px 5px;
     width: 248px;
     border-radius: 50px;
-    flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .produto p {
-    padding: 0px 25px;
+    padding: 0px 6px;
     font-size: 18px;
     color: #ffffff;
 }
@@ -119,7 +120,8 @@ main {
 }
 
 .carrossel img {
-    width: 100%;
+    width: 200px;
+    min-height: 270px;
     height: auto;
 }
 
@@ -171,7 +173,6 @@ main {
 
 .group{
     display: flex;
-    align-items: center;
     gap: 50px;
 }
 @media (max-width: 1200px) {
@@ -182,6 +183,13 @@ main {
         display: flex;
         justify-content: center;
         font-size: 36px;
+    }
+    .produto p {
+        padding: 0px 25px;
+        font-size: 18px;
+    }
+    .carrossel img {
+        width: 100%;
     }
 
     .produtos {
@@ -204,6 +212,7 @@ main {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
     }
 
     .carrossel-container {
