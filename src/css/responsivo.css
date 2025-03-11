@@ -41,8 +41,7 @@ footer {
 
 @media (max-width: 1200px) {
   footer {
-    position: relative;
-    padding: 0px;
+    margin: 0;
   }
 
   .footer-info p {
@@ -148,6 +147,10 @@ footer {
 
   .fundo {
     display: none;
+  }
+
+  main {
+    padding: 0;
   }
 
 }

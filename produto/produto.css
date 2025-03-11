@@ -12,12 +12,10 @@ h2 {
     background-clip: text;
     color: transparent;
     position: relative;
-    top: -30px;
 }
 
 main {
-    padding: 0 0 10px;
-    height: 90vh;
+    padding: 25px 0 10px;
 }
 
 .logo {
@@ -135,7 +133,7 @@ main {
 .venda {
     display: inline-flex;
     background-color: white;
-    padding: 50px 30px;
+    padding: 20px 30px;
     border-radius: 35px;
     justify-content: space-between;
     align-items: center;
@@ -192,6 +190,11 @@ main {
 }
 
 @media (max-width: 1200px) {
+    main{
+        padding: 0;
+        height: 90vh;
+    }
+
     .venda {
         flex-direction: column;
         padding: 6px 0px;
@@ -211,6 +214,11 @@ main {
     .carrossel-container {
         width: 200px;
         border-radius: 35px;
+    }
+    .carrossel {
+        display: flex;
+        transition: transform 0.7sease;
+        max-height: 230px;
     }
     .carrossel-button {
         background: rgb(85 85 85 / 70%);
@@ -238,8 +246,8 @@ main {
     .descricao {
         height: auto;
         width: 550px;
-        font-size: 14px;
-        padding: 0px 85px 10px;
+        font-size: 15px;
+        padding: 0px 92px 10px;
         gap: 4px;
     }
 
